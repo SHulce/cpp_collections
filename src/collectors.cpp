@@ -20,6 +20,11 @@ namespace collectors {
 
     template <typename T>
     int vector<T>::size() {
+        return current_index;
+    }
+
+    template <typename T>
+    int vector<T>::capacity() {
         return current_size;
     }
 
@@ -47,3 +52,5 @@ namespace collectors {
 
 template class collectors::vector<int>;
 template class collectors::vector<std::string>;
+template class collectors::vector<double>;
+template class collectors::vector<float>;

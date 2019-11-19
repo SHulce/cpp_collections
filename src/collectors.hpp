@@ -12,6 +12,7 @@ class vector {
          T get(int index);
          void push_back(T value);
          int size();
+         int capacity();
     private:
         T* storage;
         int DEFAULT_SIZE = 10;
