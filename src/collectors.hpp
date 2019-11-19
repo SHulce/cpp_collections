@@ -16,10 +16,28 @@ class vector {
     private:
         T* storage;
         int DEFAULT_SIZE = 10;
-        int current_size;
+        int current_capacity;
         int current_index;
 
         void grow_storage();
+};
+
+template <typename T>
+class stack {
+    public:
+        stack();
+        T pop();
+        void push(T value);
+        T peek();
+        int count();
+        bool empty();
+    private:
+        T* storage;
+        int size;
+        int capacity;
+        int DEFAULT_CAPACITY = 10;
+        void grow_storage();
+
 };
 
 
